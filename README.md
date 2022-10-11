@@ -1,28 +1,27 @@
-# Angular_Routing_Class_13
-Angular exercise with components and data-binding
-<hr>
-** As of 10/11 order styling changes correctly but not using seperate components. Everything done from order-dashboard. Still needs work. Bonus not yet attempted.
-<hr>
-Class Exercise:
+# OrderUp
 
-<ol>
-<li> Create a new Angular application. </li>
-<li> Generate three components using the CLI:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
-order-dashboard: a component that displays all customer orders.
-first-five-orders: a component that displays content for the first five orders.
-all-other-orders: a component that displays content for any order that isn't in the first five group.</li>
+## Development server
 
-<li> The OrderDashboardComponent should contain a list of all orders, a button that starts the workday, and a button that ends the workday.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-When the workday begins, a new order should be created every 2 seconds. (Orders should be an incrementing number starting from 1.)
-When the workday ends, no more orders should be placed. </li>
+## Code scaffolding
 
-<li>The FirstFiveOrdersComponent & the AllOtherOrdersComponent should be styled differently using colors, sizes, and content.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-FirstFiveOrdersComponent should only show the first five orders.
-AllOtherOrdersComponent should display all orders past the first five.</li>
-<li>Publish your project to GitHub!</li>
-</ol>
+## Build
 
-Bonus: Create a third component, lottery-winning-order, with a gold background and display this component every seventh order.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -1,0 +1,29 @@
+<!-- should contain
+  a list of all orders, a button that starts the workday, and a button that ends the workday.
+When the workday begins, a new order should be created every 2 seconds. (Orders should be an incrementing number starting from 1.)
+When the workday ends, no more orders should be placed. -->
+
+<h1>Order Dashboard</h1>
+<button
+  type="text"
+  style="background-color: teal; color: whitesmoke; margin-right: 5px"
+  (click)="orderStart()">
+  Start
+</button>
+<button
+  type="text"
+  style="background-color: coral; color: whitesmoke; margin-left: 5px"
+  (click)="orderStop()">
+  Stop
+</button>
+<div
+*ngFor="let item of allOrders; let i = index"
+[ngStyle]="{ backgroundColor: i >= 3 ? 'coral' : 'teal' }"
+>
+{{ item }}
+</div>
+<app-first-five-orders></app-first-five-orders>
+<hr/>
+<app-all-other-orders></app-all-other-orders>
+<hr/>
+<p>Order Number: {{ count }} </p>
